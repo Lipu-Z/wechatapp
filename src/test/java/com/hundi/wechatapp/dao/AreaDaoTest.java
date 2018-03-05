@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
+import java.util.Date;
 import java.util.List;
 
 import static org.junit.Assert.*;
@@ -45,8 +46,8 @@ public class AreaDaoTest {
     @Test
     public void updateArea() throws Exception {
         Area area = new Area();
-        area.setAreaName("west");
-        area.setAreaId(3);
+        area.setAreaId(1);
+        area.setLastEditTime(new Date());
         int effectedNum = areaDao.updateArea(area);
         assertEquals(1,effectedNum);
     }
