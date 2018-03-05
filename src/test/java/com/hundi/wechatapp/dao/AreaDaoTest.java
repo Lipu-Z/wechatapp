@@ -35,14 +35,26 @@ public class AreaDaoTest {
 
     @Test
     public void insertArea() throws Exception {
+        Area area = new Area();
+        area.setAreaName("south");
+        area.setPriority(1);
+        int effectedNum = areaDao.insertArea(area);
+        assertEquals(1,effectedNum);
     }
 
     @Test
-    public void updateAre() throws Exception {
+    public void updateArea() throws Exception {
+        Area area = new Area();
+        area.setAreaName("west");
+        area.setAreaId(3);
+        int effectedNum = areaDao.updateArea(area);
+        assertEquals(1,effectedNum);
     }
 
     @Test
     public void deleteArea() throws Exception {
+        int effectedNum = areaDao.deleteArea(3);
+        assertEquals(1,effectedNum);
     }
 
 }

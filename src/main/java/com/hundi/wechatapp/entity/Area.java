@@ -11,7 +11,7 @@ public class Area {
     private Integer areaId;
     private String areaName;
     private Integer priority;
-    private Date creatTime;
+    private Date createTime;
     private Date lastEditTime;
 
     public Integer getAreaId() {
@@ -39,11 +39,11 @@ public class Area {
     }
 
     public Date getCreatTime() {
-        return creatTime;
+        return createTime;
     }
 
     public void setCreatTime(Date creatTime) {
-        this.creatTime = creatTime;
+        this.createTime = creatTime;
     }
 
     public Date getLastEditTime() {
