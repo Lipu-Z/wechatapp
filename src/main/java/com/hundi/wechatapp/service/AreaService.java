@@ -10,7 +10,7 @@ import java.util.List;
  * @date 3/5/2018
  */
 public interface AreaService {
-    List<Area> queryArea();
+    List<Area> getAreaList();
     Area queryAreaById(int areaId);
     boolean insertArea(Area area);
     boolean updateArea(Area area);
